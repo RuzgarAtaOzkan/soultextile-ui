@@ -1,0 +1,29 @@
+.sectionerror {
+  width: 100%; height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+    display: flex; justify-content: center; align-items: center;
+}
+
+.sectionerror-ctr {
+
+}
+
+.sectionerror-ctr-title {
+  font-size: 82px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.sectionerror-ctr-desc {
+  color: white;
+  font-size: 18px;
+}
+
+.sectionerror-ctr-homebtn {
+  color: white;
+  text-decoration: underline;
+  font-size: 14px;
+  margin-top: 2rem;
+  text-align: right;
+  display: block;
+  width: 100%;
+}

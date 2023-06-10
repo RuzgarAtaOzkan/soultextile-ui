@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  font-family: 'Murecho', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+input::placeholder {
+  opacity: 0.5;
+  font-family: 'Murecho', sans-serif;
+}
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #b8b8b8;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #747474;
+  border-radius: 0px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

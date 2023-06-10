@@ -1,0 +1,236 @@
+/*
+  header-top-height: 36px
+  header-top-height-mobile: 46px
+  header-bottom-height: 62px
+*/
+
+.header {
+  width: 100%; height: auto;
+  position: fixed;
+  top: 0; left: 0;
+  transition: all .4s ease;
+  z-index: 10;
+}
+
+.headertopclosed {
+  top: -36px;
+}
+
+@media only screen and (max-width: 450px) {
+  .headertopclosed {
+    top: -46px;
+  }
+}
+
+.headerallclosed {
+  top: -98px;
+}
+
+@media only screen and (max-width: 450px) {
+  .headerallclosed {
+    top: -108px;
+  }
+}
+
+.header-top {
+  display: flex; justify-content: space-between; align-items: center;
+  background-color: black;
+  padding: 0rem 2rem;
+  height: 36px;
+  color: white;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 950px) {
+  .header-top {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .header-top {
+    height: 46px;
+  }
+}
+
+.header-topclosed {
+  height: 0px;
+}
+
+.header-top-left {
+  letter-spacing: 1px;
+  font-size: 14px; font-weight: 300;
+  line-height: 14px;
+}
+
+@media only screen and (max-width: 950px) {
+  .header-top-left {
+    text-align: center;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .header-top-right {
+    display: none;
+  }
+}
+
+.header-top-right > a {
+  color: white;
+  margin-left: 1.6rem;
+  font-size: 15px; font-weight: 300;
+  line-height: 15px;
+  transition: all .4s ease;
+  letter-spacing: 1.2px;
+}
+
+.header-top-right > a:hover {
+  color: rgb(160, 160, 160);
+}
+
+.header-bottom {
+  background-color: white;
+  padding: 0 1.6rem;
+  display: flex; justify-content: space-between; align-items: center;
+  height: 62px;
+  border-bottom: 1px solid rgb(231, 231, 231);
+  position: relative;
+}
+
+.header-bottom-left {
+  display: flex; justify-content: flex-start; align-items: center;
+  height: 100%;
+}
+
+.header-bottom-left-hamburger {
+  width: 24px;
+  height: 20px;
+  position: relative;
+  margin-right: 1rem;
+  cursor: pointer;
+  display: none;
+}
+
+@media only screen and (max-width: 950px) {
+  .header-bottom-left-hamburger {
+    display: block;
+  }
+}
+
+.header-bottom-left-hamburger-stick {
+  height: 2px; width: 100%;
+  background-color: black;
+  position: absolute;
+  transition: all .4s ease;
+}
+
+.header-bottom-left-hamburger-stick:nth-child(1) {
+  top: 0; left: 0;
+}
+
+.header-bottom-left-hamburger-stick:nth-child(2) {
+  top: 50%; left: 0;
+  transform: translate(0%, -50%);
+}
+
+.header-bottom-left-hamburger-stick:nth-child(3) {
+  bottom: 0; left: 0;
+}
+
+.header-bottom-left-hamburger-stickopen:nth-child(1) {
+  transform: translate(-50%, -50%) rotateZ(45deg);
+  top: 50%; left: 50%;
+}
+
+.header-bottom-left-hamburger-stickopen:nth-child(2) {
+  opacity: 0;
+  left: -100%;
+}
+
+.header-bottom-left-hamburger-stickopen:nth-child(3) {
+  transform: translate(-50%, -50%) rotateZ(-45deg);
+  top: 50%; left: 50%;
+}
+
+.header-bottom-left > img {
+  margin: .4rem 3rem .4rem 0;
+  display: block;
+  width: 90px;
+}
+
+@media only screen and (max-width: 950px) {
+  .header-bottom-left > img {
+    margin: .4rem 2rem .4rem 0;
+  }
+}
+
+.header-bottom-left > a {
+  display: flex; justify-content: center; align-items: center;
+  height: 100%;
+  text-align: center;
+  padding: 0 1rem;
+  letter-spacing: 3px;
+  font-weight: 300;
+  color: black;
+}
+
+@media only screen and (max-width: 950px) {
+  .header-bottom-left > a {
+    display: none;
+  }
+}
+
+.header-bottom-left > a:hover {
+  background-color: rgb(233, 233, 233);
+}
+
+.header-bottom-right {
+  height: 100%;
+  display: flex; justify-content: center; align-items: center;
+}
+
+.header-bottom-right  svg {
+  display: block;
+  transition: all .4s ease;
+  color: black;
+  margin-left: 2rem;
+}
+
+.header-bottom-right svg:hover {
+  color: rgb(155, 155, 155);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 950px) {
+  .header-bottom-right  svg {
+    margin-left: 1rem;
+  }
+}
+
+.header-bottom-mobilenav {
+  position: absolute;
+  width: 100%; height: calc(100vh - 107px);
+  top: 100%; left: 0;
+  background-color: white;
+  display: none;
+  border-top: 1px solid rgb(231, 231, 231);
+}
+
+@media only screen and (max-width: 950px) {
+  .header-bottom-mobilenav {
+    display: block;
+  }
+}
+
+.header-bottom-mobilenav-item {
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 1.6rem;
+  color: black;
+  letter-spacing: 3px;
+  font-weight: 400; font-size: 18px;
+  border-bottom: 1px solid rgb(231, 231, 231);
+  cursor: pointer;
+}

@@ -1,0 +1,11 @@
+.main {
+  transition: all .3s ease-out;
+  margin-top: var(--comp-header-height);
+  background-color: white;
+}
+
+@media only screen and (max-width: 650px) {
+  .main {
+    margin-top: var(--comp-header-height-mobile);
+  }
+}

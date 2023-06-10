@@ -1,0 +1,124 @@
+.footer {
+  background-color: black;
+  color: white;
+}
+
+.footer-top {
+  padding: 3rem;
+  display: flex; justify-content: space-between; align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+@media only screen and (max-width: 750px) {
+  .footer-top {
+    display: block;
+    padding: 1.5rem;
+  }
+}
+
+.footer-top-left-title {
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.footer-top-left-desc {
+  margin-top: 1.4rem;
+  font-size: 14px; letter-spacing: 1px;
+}
+
+.footer-top-left-inputtitle {
+  margin-top: .5rem;
+  font-size: 12px; letter-spacing: 1px;
+  color: rgb(160, 160, 160);
+}
+
+.footer-top-left-inputctr {
+  margin-top: .5rem;
+  padding: .5rem .8rem;
+  width: 340px;
+  display: flex; justify-content: space-between; align-items: center;
+  border: 1px solid rgb(163, 163, 163);
+}
+
+.footer-top-left-inputctr > input {
+  outline: none;
+  border: none;
+  font-size: 16px;
+  color: rgb(184, 184, 184);
+  background-color: transparent;
+  width: 70%;
+}
+
+.footer-top-left-inputctr > div {
+  text-align: right;
+  cursor: pointer;
+}
+
+.footer-top-left-inputctr {
+  margin-bottom: 1.4rem;
+}
+
+@media only screen and (max-width: 750px) {
+  .footer-top-left-inputctr {
+    width: 100%;
+  }
+}
+
+.footer-top-right {
+  display: flex; justify-content: flex-start; align-items: flex-start;
+}
+
+@media only screen and (max-width: 750px) {
+  .footer-top-right {
+    margin-top: 2rem;
+    display: block;
+  }
+}
+
+.footer-top-right-list:nth-child(1) {
+  margin-right: 2rem;
+}
+
+@media only screen and (max-width: 750px) {
+  .footer-top-right-list:nth-child(2) {
+    margin-top: 2rem;
+  }
+}
+
+.footer-top-right-list-title {
+  font-size: 14px; font-weight: 400; 
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.footer-top-right-list-item {
+  font-size: 12px; font-weight: 400; 
+  letter-spacing: .5px;
+  margin-top: .5rem;
+  display: block;
+  color: rgb(204, 204, 204);
+}
+
+.footer-top-right-list-item:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  padding: 2rem 2rem;
+  display: flex; justify-content: space-between; align-items: center;
+}
+
+@media only screen and (max-width: 750px) {
+  .footer-bottom {
+    padding: 1.5rem 1.5rem;
+  }
+}
+
+.footer-bottom-left {
+  font-size: 15px; font-weight: 300;
+}
+
+.footer-bottom-right > img {
+  margin-left: 1rem;
+}

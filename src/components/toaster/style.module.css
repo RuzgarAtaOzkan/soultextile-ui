@@ -1,0 +1,102 @@
+.toaster {
+  position: fixed;
+  top: 50px; right: 50px;
+  width: 340px;
+  z-index: 10;
+}
+
+@media only screen and (max-width: 650px) {
+  .toaster {
+    left: 0; top: 0;
+    width: 100%;
+  }
+}
+
+@keyframes ani-toaster-toast {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: 0;
+  }
+}
+
+.toaster-toast {
+  position: relative;
+  padding: 1rem;
+  display: flex; justify-content: space-between; align-items: flex-start;
+  border-radius: 4px;
+  color: white;
+  margin-bottom: 1rem;
+  box-shadow: 0px 0px 20px  rgba(0, 0, 0, 0.5);
+  transition: all .3s ease-in;
+}
+
+@media only screen and (max-width: 650px) {
+  .toaster-toast {
+    margin-bottom: 0;
+    border-radius: 0;
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%;
+  }
+}
+
+.toaster-toastani {
+  animation: ani-toaster-toast .5s ease 0s;
+}
+
+@media only screen and (max-width: 650px) {
+  .toaster-toastani {
+    margin-bottom: 0;
+  }
+}
+
+/* for clearing toasts*/
+.toaster-toastfade {
+  opacity: 0;
+}
+
+.toaster-toastsuccess {
+  background-color: rgb(123, 189, 97);
+}
+
+.toaster-toasterror {
+  background-color: red;
+}
+
+.toaster-toastwarning {
+  background-color: yellow;
+}
+
+.toaster-toastinfo {
+  background-color: rgb(59, 144, 255);
+}
+
+.toaster-toast-left {
+  margin-right: 1rem;
+  display: flex; justify-content: flex-start; align-items: flex-start;
+}
+
+.toaster-toast-left-icon {
+  display: flex; justify-content: center; align-items: center;
+  width: 22px;
+  font-size: 22px;
+}
+
+.toaster-toast-left-icon {
+  width: 22px;
+  display: block;
+}
+
+.toaster-toast-left-message {
+  margin-left: 1rem;
+  font-size: 14px;
+}
+
+.toaster-toast-right {
+  width: 14px;
+  display: block;
+  cursor: pointer;
+}
